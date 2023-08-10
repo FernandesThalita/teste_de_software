@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste CRUD</title>
+</head>
+<body>
+    <script>
+        //funçao a ser testada
+        function somar(a, b){
+            return a+b;
+
+           
+        }
+         //funçao para realizar o teste 
+         function testeSoma(){
+            const resultado1 = somar(2,4);
+            if (resultado1 ===5){
+                console.log('teste passou')
+            }else{
+                console.error('teste 1 falhou')
+            }
+
+            const resultado2 = somar(-1,1);
+            if (resultado2 ===0){
+                console.log('teste passou')
+            }else{
+                console.error('teste 1 falhou')
+            }
+        }
+
+        //executa teste 
+        testeSoma();
+    </script>
+</body>
+</html>
